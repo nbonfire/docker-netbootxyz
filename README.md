@@ -88,9 +88,9 @@ services:
       - /path/to/config:/config
       - /path/to/assets:/assets #optional
     ports:
-      - 3000:3000
-      - 69:69/udp
-      - 8080:80 #optional
+      - 3000:3000 # Web UI port
+      - 69:69/udp # TFTP port
+      - 8080:80 #optional, for hosting images
     restart: unless-stopped
 ```
 
